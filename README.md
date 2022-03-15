@@ -1,24 +1,41 @@
-# README
+# Kambelis-backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the backend Rails API for the Kambelis project
 
-Things you may want to cover:
+## Link to the Front-end
 
-* Ruby version
+[kambelis-frontend](https://github.com/ntzwilly/kambelis-frontend)
 
-* System dependencies
+## Getting Started
 
-* Configuration
+To get a local copy up and running follow these simple example steps.
 
-* Database creation
+## Built with:
+  - Ruby
+  - Rails
+  - PostgreSQL
+## Setup
 
-* Database initialization
+- Make sure you have Ruby IRB installed on your computer
+- Clone or download this repo on your machine
+- Enter project directory
+## Install
 
-* How to run the test suite
+```sh
+bundle install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Database
 
-* Deployment instructions
+```sh
+# Create the database
+rails db:create
 
-* ...
+## Apply migration (only if you generate a new migration file)
+rails db:migrate
+```
+### Run
+
+```sh
+rails s
+```
