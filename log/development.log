@@ -1022,3 +1022,128 @@ Processing by Api::GreetingsController#index as */*
 Completed 200 OK in 16ms (Views: 1.0ms | ActiveRecord: 4.8ms | Allocations: 669)
 
 
+Started GET "/" for ::1 at 2022-03-26 07:33:13 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/willy/.rbenv/versions/3.0.3/lib/ruby/gems/3.0.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/willy/.rbenv/versions/3.0.3/lib/ruby/gems/3.0.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 728)
+Completed 200 OK in 11ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 6231)
+
+
+Started GET "/api/greeting" for ::1 at 2022-03-26 07:33:23 +0200
+Processing by Api::GreetingsController#index as JSON
+  [1m[36mGreeting Load (63.2ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 252ms (Views: 0.2ms | ActiveRecord: 140.9ms | Allocations: 6234)
+
+
+Started GET "/api/greeting" for ::1 at 2022-03-26 07:33:27 +0200
+Processing by Api::GreetingsController#index as JSON
+  [1m[36mGreeting Load (1.3ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 1.3ms | Allocations: 800)
+
+
+Started GET "/favicon.ico" for ::1 at 2022-03-26 07:33:28 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/greeting" for ::1 at 2022-03-26 07:33:29 +0200
+Processing by Api::GreetingsController#index as JSON
+  [1m[36mGreeting Load (1.4ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 10ms (Views: 0.9ms | ActiveRecord: 1.4ms | Allocations: 851)
+
+
+Started GET "/api/greeting" for ::1 at 2022-03-26 07:33:31 +0200
+Processing by Api::GreetingsController#index as JSON
+  [1m[36mGreeting Load (2.3ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 12ms (Views: 0.8ms | ActiveRecord: 2.3ms | Allocations: 663)
+
+
+Started GET "/api/greeting" for ::1 at 2022-03-26 07:33:32 +0200
+Processing by Api::GreetingsController#index as JSON
+  [1m[36mGreeting Load (1.2ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 1.2ms | Allocations: 662)
+
+
+Started GET "/api/greeting" for ::1 at 2022-03-26 07:33:34 +0200
+Processing by Api::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.4ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 663)
+
+
+Started GET "/api/greeting" for ::1 at 2022-03-26 07:33:35 +0200
+Processing by Api::GreetingsController#index as JSON
+  [1m[36mGreeting Load (1.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 1.6ms | Allocations: 674)
+
+
+Started GET "/api/greeting" for ::1 at 2022-03-26 07:37:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.7ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 4.0ms | Allocations: 19130)
+
+
+Started GET "/api/greeting" for ::1 at 2022-03-26 07:37:09 +0200
+Processing by Api::GreetingsController#index as JSON
+  [1m[36mGreeting Load (1.7ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 1.7ms | Allocations: 802)
+
+
+Started GET "/api/greeting" for ::1 at 2022-03-26 07:37:11 +0200
+Processing by Api::GreetingsController#index as JSON
+  [1m[36mGreeting Load (1.7ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 11ms (Views: 0.6ms | ActiveRecord: 1.7ms | Allocations: 678)
+
+
+Started GET "/api/greeting" for ::1 at 2022-03-26 07:37:12 +0200
+Processing by Api::GreetingsController#index as JSON
+  [1m[36mGreeting Load (2.8ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 13ms (Views: 2.0ms | ActiveRecord: 2.8ms | Allocations: 678)
+
+
+Started GET "/api/greeting" for ::1 at 2022-03-26 07:37:13 +0200
+Processing by Api::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.3ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 678)
+
+
+Started GET "/api/greeting" for ::1 at 2022-03-26 07:37:14 +0200
+Processing by Api::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.4ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 663)
+
+
+Started GET "/api/greeting" for ::1 at 2022-03-26 07:37:15 +0200
+Processing by Api::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 662)
+
+
+Started GET "/api/greeting" for ::1 at 2022-03-26 07:37:16 +0200
+Processing by Api::GreetingsController#index as JSON
+  [1m[36mGreeting Load (2.0ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 2.0ms | Allocations: 662)
+
+
+Started GET "/api/greeting" for ::1 at 2022-03-26 07:37:17 +0200
+Processing by Api::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 662)
+
+
